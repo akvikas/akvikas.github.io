@@ -11,7 +11,7 @@ export default function Reveal({ id, title, children }: { id: string; title: str
       viewport={{ once: true, amount: 0.15 }}
       transition={{ duration: 0.5 }}
     >
-      <h2>{title}</h2>
+      <h2><span className="idx">{String(['projects', 'skills', 'achievements', 'about', 'journey', 'contact'].indexOf(id) + 1).padStart(2, '0')}</span>{title}</h2>
       {children}
     </motion.section>
   )
