@@ -1,4 +1,5 @@
 import { defineConfig } from 'vite'
+import { resolve } from 'node:path'
 import react from '@vitejs/plugin-react'
 
 // VITE_BASE is set by CI (GitHub Pages) and defaults to "/" (local dev, Docker)
@@ -17,5 +18,13 @@ export default defineConfig({
       },
     },
   ],
-  build: { chunkSizeWarningLimit: 1000 }, // the 3D chunk is lazy-loaded
+  build: {
+    chunkSizeWarningLimit: 1000,
+    rollupOptions: {
+      input: {
+        home: resolve(__dirname, 'index.html'),
+        threeDPortfolio: resolve(__dirname, '3d-portfolio.html'),
+      },
+    },
+  },
 })
