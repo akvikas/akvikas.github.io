@@ -57,5 +57,6 @@ export const projects: Project[] = [
     ],
     highlight: 'Dependency-free: the environment and agent run on plain Python.',
     repo: 'https://github.com/akvikas/rl-trading-lab',
+    demo: 'https://rl-trading-lab-ptfwpyqvttkq2k2morzc3l.streamlit.app/',
   },
 ]
