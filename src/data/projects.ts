@@ -21,6 +21,8 @@ export const projects: Project[] = [
       'Host transfer, chat rate-limiting and deterministic SVG avatars',
     ],
     highlight: 'Server-side authority prevents cheating and keeps timers, voting and recovery consistent.',
+    repo: 'https://github.com/akvikas/wordtrap',
+    demo: 'https://wordtrap.vercel.app',
   },
   {
     name: 'EnviConnect',
