@@ -23,10 +23,6 @@
     .card { width: min(720px, 100%); padding: clamp(28px, 6vw, 52px); text-align: center; border: 1px solid var(--border); border-radius: 28px; background: var(--glass); box-shadow: 0 22px 70px rgba(0,0,0,.2); backdrop-filter: blur(20px) saturate(135%); -webkit-backdrop-filter: blur(20px) saturate(135%); }
     h1 { margin: 0; font-size: clamp(2.5rem, 7vw, 4.8rem); letter-spacing: -.065em; line-height: 1; } h1 span { color: var(--accent); }
     .bio { max-width: 52ch; margin: 18px auto 30px; color: var(--muted); font-size: clamp(.98rem, 2vw, 1.08rem); }
-    .search { display: flex; align-items: center; gap: 13px; width: min(590px, 100%); margin: auto; padding: 3px 12px 3px 18px; border: 1px solid var(--border); border-radius: 999px; background: var(--input); transition: box-shadow .2s, border-color .2s; }
-    .search:focus-within { border-color: var(--accent); box-shadow: 0 0 0 4px rgba(var(--accent-rgb), .2); }.search svg { flex: 0 0 auto; fill: var(--muted); }
-    .search input { min-width: 0; flex: 1; border: 0; outline: 0; padding: 13px 0; color: var(--text); font: inherit; background: transparent; }.search input::placeholder { color: var(--muted); }
-    .search button { width: 42px; height: 42px; display: grid; place-items: center; border: 0; border-radius: 50%; color: var(--text); background: transparent; cursor: pointer; }.search button:hover { background: rgba(var(--accent-rgb), .2); }.search button svg { fill: var(--accent); }
     .shortcuts { display: grid; grid-template-columns: repeat(6, minmax(70px, 1fr)); gap: 17px; max-width: 620px; margin: 36px auto 0; }
     .shortcut { display: grid; justify-items: center; gap: 8px; color: var(--text); font-size: .82rem; text-decoration: none; }.shortcut:hover .icon, .shortcut:focus-visible .icon { transform: translateY(-3px); box-shadow: 0 12px 24px rgba(0,0,0,.18); border-color: var(--accent); }.icon { width: 58px; height: 58px; display: grid; place-items: center; border: 1px solid var(--border); border-radius: 18px; background: rgba(255,255,255,.13); font-size: 1.45rem; transition: transform .2s, box-shadow .2s, border-color .2s; }.shortcut small { color: var(--muted); font-size: inherit; }
     .customize { justify-self: end; display: inline-flex; align-items: center; gap: 8px; padding: 9px 13px; border: 1px solid var(--border); border-radius: 999px; color: var(--text); background: rgba(12,16,28,.35); backdrop-filter: blur(10px); cursor: pointer; font: inherit; }.light .customize { background: rgba(255,255,255,.45); }.customize:hover { border-color: var(--accent); }
@@ -42,11 +38,6 @@
       <section class="card" id="about" aria-labelledby="intro-title">
         <h1 id="intro-title">Hello, I’m <span>Vikas.</span></h1>
         <p class="bio">A computer science engineer building thoughtful full-stack, AI, and real-time web experiences.</p>
-        <form class="search" action="https://www.google.com/search" method="get" target="_blank" role="search">
-          <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M10 4a6 6 0 1 0 3.74 10.69l4.78 4.78 1.41-1.41-4.78-4.78A6 6 0 0 0 10 4m0 2a4 4 0 1 1 0 8 4 4 0 0 1 0-8"/></svg>
-          <input name="q" aria-label="Search Google" placeholder="Search Google or type a URL" autocomplete="off" />
-          <button aria-label="Search"><svg width="21" height="21" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3m-5 9a1 1 0 0 0-2 0 7 7 0 0 0 6 6.92V22h2v-4.08A7 7 0 0 0 19 11a1 1 0 0 0-2 0 5 5 0 0 1-10 0"/></svg></button>
-        </form>
         <nav class="shortcuts" aria-label="Portfolio shortcuts">
           <a class="shortcut" href="https://github.com/akvikas" target="_blank" rel="noopener noreferrer"><span class="icon">⌘</span><small>GitHub</small></a>
           <a class="shortcut" href="https://github.com/akvikas/akvikas.github.io" target="_blank" rel="noopener noreferrer"><span class="icon">◈</span><small>Projects</small></a>

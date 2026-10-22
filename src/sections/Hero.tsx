@@ -10,11 +10,6 @@ export default function Hero() {
         <h1 className="glitch" data-text="MR. VIKAS AK">MR. VIKAS AK</h1>
         <p className="role">Computer Science Engineer | Python | Full-Stack | AI &amp; Backend</p>
         <p className="lede">I build full-stack and real-time applications with Node.js and Python. LeetCode contest rating 1849, GATE qualified.</p>
-        <form className="hero-search" action="https://www.google.com/search" method="get" target="_blank" role="search">
-          <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M10 4a6 6 0 1 0 3.74 10.69l4.78 4.78 1.41-1.41-4.78-4.78A6 6 0 0 0 10 4m0 2a4 4 0 1 1 0 8 4 4 0 0 1 0-8" /></svg>
-          <input name="q" aria-label="Search Google" placeholder="Search Google or type a URL" autoComplete="off" />
-          <button type="submit" aria-label="Search Google">↗</button>
-        </form>
         <div className="btns">
           <a className="btn main" href="#projects">View Projects</a>
           <a className="btn" href={links.github} target="_blank" rel="noopener noreferrer">GitHub</a>
