@@ -52,7 +52,7 @@ export default function App() {
           <Journey />
           <Contact />
         </main>
-        <footer>Vikas AK</footer>
+        <footer>MR. VIKAS AK</footer>
       </div>
     </>
   )

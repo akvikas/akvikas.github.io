@@ -7,7 +7,7 @@ export default function Hero() {
   return (
     <div className="hero">
       <div>
-        <h1 className="glitch" data-text="VIKAS AK">VIKAS AK</h1>
+        <h1 className="glitch" data-text="MR. VIKAS AK">MR. VIKAS AK</h1>
         <p className="role">Computer Science Engineer | Python | Full-Stack | AI &amp; Backend</p>
         <p className="lede">I build full-stack and real-time applications with Node.js and Python. LeetCode contest rating 1849, GATE qualified.</p>
         <form className="hero-search" action="https://www.google.com/search" method="get" target="_blank" role="search">
