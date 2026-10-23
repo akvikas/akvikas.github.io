@@ -27,7 +27,7 @@ export const projects: Project[] = [
   {
     name: 'WordTrap',
     desc: 'A real-time multiplayer social deduction game with strict server-side authority, built to keep every player in sync.',
-    tech: ['Node.js', 'Express', 'Socket.IO', 'SVG'],
+    tech: ['Node.js', 'Express', 'Socket.IO', 'SVG', 'TypeScript'],
     features: [
       'Synchronized phases: role reveal, sequential descriptions, voting and results',
       'Sequential speaker timers and host-configurable game settings',
@@ -40,15 +40,32 @@ export const projects: Project[] = [
     demo: 'https://wordtrap.vercel.app',
   },
   {
-    name: 'EnviConnect',
-    desc: 'A community platform that connects urban youth with sustainability projects to discover, join, create and collaborate.',
-    tech: ['HTML', 'CSS', 'JavaScript', 'Node.js', 'Express', 'MongoDB'],
+    name: 'RL Trading Lab',
+    desc: 'An educational Q-learning algorithmic trading sandbox with a real-time dark cyber dashboard, trade execution ledger, and profit analytics.',
+    tech: ['Python 3.10+', 'Q-Learning', 'Streamlit', 'Plotly', 'Pytest', 'CI/CD'],
     features: [
-      'Discover, join, create and collaborate on eco-friendly initiatives',
-      'Real-time tracking of participation',
-      'One central hub for fragmented communication and low awareness',
+      'Interactive Streamlit Cyber Command Center with real-time equity curves and BUY/SELL execution markers',
+      'Granular trade-by-trade audit ledger tracking fill prices, commission fees, and realized P&L with CSV export',
+      '3 distinct market regimes: Geometric Brownian Motion, momentum Trend, and Mean Reversion',
+      'Out-of-sample benchmark across 50 unseen seeds with zero data leakage and 10 bps transaction drag',
+      'Automated testing with 20 Pytest suites and multi-OS GitHub Actions CI matrix',
     ],
-    highlight: 'Participation tracking gives measurable contributions and accountability.',
+    highlight: 'Full execution transparency with real-time profit tracking and institutional transaction cost modeling.',
+    repo: 'https://github.com/akvikas/rl-trading-lab',
+    demo: 'https://rl-trading-lab-ptfwpyqvttkq2k2morzc3l.streamlit.app/',
+  },
+  {
+    name: 'EnviConnect',
+    desc: 'A responsive community action platform designed to discover, pledge, and organize local sustainability initiatives with zero cold-start delay.',
+    tech: ['React 19', 'TypeScript', 'Tailwind CSS v4', 'Vitest', 'Testing Library', 'Browser Storage'],
+    features: [
+      'Zero-latency category filtering across clean-up drives, urban farming, and climate education',
+      'Dynamic participant counts and volunteer hours pledged update instantaneously on join/leave',
+      'Strict input validation guardrails with character counters and accessible error states',
+      'Resilient UI handling loading skeletons, empty filtered states, and action toast banners',
+      'Automated Vitest component test suite and multi-version Node.js GitHub Actions CI',
+    ],
+    highlight: 'Fast client-side persistence and accessible reactive state without external database overhead.',
     repo: 'https://github.com/akvikas/enviconnect',
   },
   {
@@ -61,19 +78,5 @@ export const projects: Project[] = [
       'Downloadable reports and live updates',
       'Secure authentication and HSL-based color schemes',
     ],
-  },
-  {
-    name: 'RL Trading Lab',
-    desc: 'An educational Q-learning trading sandbox that compares a learned policy with buy-and-hold on synthetic prices.',
-    tech: ['Python', 'Q-learning', 'Simulation', 'Unit tests'],
-    features: [
-      'Generates synthetic market prices',
-      'Trains a tabular Q-learning agent',
-      'Compares the learned policy with buy-and-hold',
-      'Includes unit tests',
-    ],
-    highlight: 'Dependency-free: the environment and agent run on plain Python.',
-    repo: 'https://github.com/akvikas/rl-trading-lab',
-    demo: 'https://rl-trading-lab-ptfwpyqvttkq2k2morzc3l.streamlit.app/',
   },
 ]
