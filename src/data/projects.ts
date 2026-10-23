@@ -10,6 +10,21 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    name: 'Free My TV (3D Cyber Edition)',
+    desc: 'An ad-free, hardware-accelerated 3D Smart TV launcher engineered for Samsung Tizen 5.0+ (Series 7) and Google TV, featuring Three.js WebGL and spatial D-Pad navigation.',
+    tech: ['Three.js', 'WebGL', 'JavaScript', 'Samsung Tizen SDK', 'Spatial Navigation', 'SDB'],
+    features: [
+      'Interactive 3D Hero Orbit Sphere rendered at 60 FPS on ARM Mali GPU via Three.js',
+      'Spatial navigation engine eliminating remote D-Pad focus traps with tabindex synchronization',
+      'Directional keydown escape listener from top header buttons to bottom shelf cards',
+      'Dual-ID fallback resolution supporting Tizen package IDs and Samsung Store numeric IDs',
+      'Automated packaging, signing (author & distributor certs), and direct SDB deployment',
+    ],
+    highlight: 'Real-time 3D WebGL physics and spatial remote navigation on constrained Smart TV hardware.',
+    repo: 'https://github.com/akvikas/free-my-tv',
+    demo: 'https://akvikas.github.io/free-my-tv/',
+  },
+  {
     name: 'WordTrap',
     desc: 'A real-time multiplayer social deduction game with strict server-side authority, built to keep every player in sync.',
     tech: ['Node.js', 'Express', 'Socket.IO', 'SVG'],

@@ -41,7 +41,11 @@ export default function ProjectCard({ p }: { p: Project }) {
           <h3>{p.name}</h3>
           <p>{p.desc}</p>
           <div className="chips">{p.tech.map((t) => <span className="chip" key={t}>{t}</span>)}</div>
-          <button ref={frontBtn} className="btn fb" onClick={toggle} aria-label={`Show details for ${p.name}`}>Details</button>
+          <div className="row" style={{ marginTop: 'auto', display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
+            <button ref={frontBtn} className="btn fb" onClick={toggle} aria-label={`Show details for ${p.name}`}>Details</button>
+            {p.demo && <a className="btn main" href={p.demo} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>Live demo</a>}
+            {p.repo && <a className="btn" href={p.repo} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>GitHub</a>}
+          </div>
         </div>
         <div className="face back glass" inert={!flipped}>
           <h3>{p.name}</h3>
@@ -49,8 +53,8 @@ export default function ProjectCard({ p }: { p: Project }) {
           <ul>{p.features.map((f) => <li key={f}>{f}</li>)}</ul>
           {p.highlight && (<><h4>Technical highlight</h4><p>{p.highlight}</p></>)}
           <div className="row">
-            {p.repo && <a ref={backLink} className="btn main" href={p.repo} target="_blank" rel="noopener noreferrer">GitHub</a>}
-            {p.demo && <a className="btn" href={p.demo} target="_blank" rel="noopener noreferrer">Live demo</a>}
+            {p.repo && <a ref={backLink} className="btn" href={p.repo} target="_blank" rel="noopener noreferrer">GitHub</a>}
+            {p.demo && <a className="btn main" href={p.demo} target="_blank" rel="noopener noreferrer">Live demo</a>}
             <button ref={backBtn} className="btn fb" onClick={toggle} aria-label={`Back to ${p.name} summary`}>Back</button>
           </div>
         </div>
